@@ -63,7 +63,9 @@ let account3 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, bank.generat
 
 const accountNumber = [account1, account2, account3];
 
+console.log("Urmatoarele conturi sunt deschise:");
 bank.displayAllAccounts();
+console.log("Urmatoarele conturi au sold negativ:");
 bank.displayAllNegativeAccounts();
 // bank.displayAccount(0);
 // bank.displayAccount(1);
