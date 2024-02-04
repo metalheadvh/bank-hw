@@ -1,5 +1,5 @@
 const accountCharacters = ["RO", 1, 2, 3, 4, 5, "A", "B", "C", "D", "E", "F"];
-const sums = ["-1000", "-2000", "3000", "4000"];
+const sums = [-1000, -2000, -5000, 3000, -4000, 6000, 7000, 8000, 9000];
 //let amount = sums[Math.floor(Math.random() * sums.length)];
 
 class bancaLuMatei {
@@ -60,8 +60,10 @@ let bank = new bancaLuMatei();
 let account1 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, bank.generateRandomSum(1));
 let account2 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, bank.generateRandomSum(1));
 let account3 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, bank.generateRandomSum(1));
+let account4 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, bank.generateRandomSum(1));
+let account5 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, bank.generateRandomSum(1));
 
-const accountNumber = [account1, account2, account3];
+const accountNumber = [account1, account2, account3, account4, account5];
 
 console.log("Urmatoarele conturi sunt deschise:");
 bank.displayAllAccounts();
