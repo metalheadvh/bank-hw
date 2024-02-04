@@ -27,12 +27,12 @@ class bancaLuMatei {
         return password;
     }
 
-    //random account
+    //random account - change form while to for
     generateRandomSum(length) {
         let password = "";
-        while (password.length < length) {
-            const i = Math.ceil(Math.random() * sums.length - 1);
-            password = password + sums[i];
+        for (let i = 0; i < length; i++) {
+            const random = sums[Math.floor(Math.random() * sums.length)];
+            password = password + random;
         }
         return password;
     }
