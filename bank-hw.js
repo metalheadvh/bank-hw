@@ -57,9 +57,9 @@ class bancaLuMatei {
 
 let bank = new bancaLuMatei();
 
-let account1 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, amount);
-let account2 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, amount);
-let account3 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, amount);
+let account1 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, bank.generateRandomSum(1));
+let account2 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, bank.generateRandomSum(1));
+let account3 = bank.adaugaCont(`${bank.generateRandomAccount(20)}`, bank.generateRandomSum(1));
 
 const accountNumber = [account1, account2, account3];
 
